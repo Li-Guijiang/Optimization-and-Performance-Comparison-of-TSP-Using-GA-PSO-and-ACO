@@ -14,8 +14,8 @@ c1 = 2.0  # 个人学习因子
 c2 = 2.0  # 社会学习因子
 
 # 随机生成城市的坐标
-distance_x = [random.randint(50, 750) for _ in range(city_num)]
-distance_y = [random.randint(50, 550) for _ in range(city_num)]
+distance_x = [random.randint(100,3600 ) for _ in range(city_num)]
+distance_y = [random.randint(100, 3522) for _ in range(city_num)]
 
 # 计算城市之间的距离
 distance_graph = [[0.0 for _ in range(city_num)] for _ in range(city_num)]
@@ -44,6 +44,7 @@ def two_opt(path):
 class Particle:
     def __init__(self):
         self.path = random.sample(range(city_num), city_num)
+        self.path = random.self.path[]
         self.p_best = self.path[:]
         self.p_best_distance = calculate_distance(self.path)
         self.velocity = []
