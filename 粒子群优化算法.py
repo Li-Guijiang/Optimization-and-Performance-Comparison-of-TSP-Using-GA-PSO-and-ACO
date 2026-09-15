@@ -1,7 +1,5 @@
 import random
 import tkinter
-import fastapi
-
 #设置随机种子
 random.seed(123)
 
